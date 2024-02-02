@@ -1,0 +1,7 @@
+// declare your variables below
+var varA = 1;
+var varB = "string";
+var varC = true;
+var varD = undefined;
+var varE = [1,2,3,];
+var varF = Symbol();
