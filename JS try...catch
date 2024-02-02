@@ -1,0 +1,13 @@
+function handleCallback(callback) {
+  // write your code here
+  try{
+      if(typeof callback ==='function'){
+          callback();
+      }else{
+          throw new Error("Callback is not a function")
+      }
+
+  }catch (error){
+      console.log("error thrown");
+  }
+}
