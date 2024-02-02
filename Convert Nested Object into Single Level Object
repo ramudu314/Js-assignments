@@ -1,0 +1,15 @@
+let resultObj = {};
+function flatTheObj(obj, parent) {
+    // Write your code here
+    for(const key in obj){
+        const newKey = parent ? `${parent}_${key}` : key;
+
+        if(typeof obj[key] === 'object' && obj[key]!=null){
+            flatTheObj(obj[key],newKey);
+        }else{
+            resultObj[newKey] = obj[key];
+        }
+    }
+    return resultObj;
+
+}
