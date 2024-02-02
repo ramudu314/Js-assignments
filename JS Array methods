@@ -1,0 +1,8 @@
+function getNumbersGreaterThan5(nums) {
+    // write code here
+    // return the output , do not use console.log here
+    const newArray = nums.filter(function(num){
+        return num > 5;
+    })
+    return newArray;
+}
