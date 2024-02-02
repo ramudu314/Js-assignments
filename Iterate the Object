@@ -1,0 +1,11 @@
+function solve(obj) {
+    // Using for...of to print all values directly to the console
+    for (const value of Object.values(obj)) {
+        console.log(value);
+    }
+
+    // Using for...in to print key-value pairs directly to the console
+    for (const key in obj) {
+        console.log(`${key}: ${obj[key]}`);
+    }
+}
