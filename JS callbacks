@@ -1,0 +1,8 @@
+function callThisFnBack(number,ram) {
+        // return the output using return keyword
+    // do not console.log it
+    return ram(number);
+}
+function squernumber(num){
+    return num*num;
+}
