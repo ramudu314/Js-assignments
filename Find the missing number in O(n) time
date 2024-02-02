@@ -1,0 +1,9 @@
+function findMissingNumber(arrayOfIntegers, upperBound, lowerBound) {
+    // write code here
+    // use console.log for output
+    const expectedSum = (upperBound * (upperBound + 1)) / 2 - (lowerBound * (lowerBound - 1)) / 2;
+    const actualSum = arrayOfIntegers.reduce((sum, num) => sum + num, 0);
+    const missingNumber = expectedSum - actualSum;
+
+    console.log(missingNumber);
+}
